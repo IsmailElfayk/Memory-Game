@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="control-button">
+      <span>Start Game</span>
+    </div>
+    <div class="game-over" style="display: none">
+      <span class="restart">Restart</span>
+    </div>
+    <div class="win" style="display: none">
+      <div>You Win</div>
+      <span class="restart">Restart</span>
+    </div>
+    <div class="info-container">
+      <div class="name">Welcome, <span></span></div>
+      <div class="tries">Wrong tries: <span>0</span></div>
+    </div>
+    <div class="memory-game-blocks">
+      <div class="game-block" data-tech="html">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/html.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="html">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/html.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="css">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/css-3.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="css">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/css-3.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="js">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/java-script.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="js">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/java-script.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="php">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/php.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="php">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/php.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="java">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/java.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="java">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/java.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="python">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/python.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="python">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/python.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="c#">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/c-sharp.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="c#">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/c-sharp.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="c">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/letter-c.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="c">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/letter-c.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="git">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/github.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="git">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/github.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="react">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/atom.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-tech="react">
+        <div class="face front">
+          <img src="./images/exclamation.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="./images/atom.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
