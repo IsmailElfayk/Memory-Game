@@ -129,6 +129,6 @@ body {
   }
   .memory-game-blocks .game-block {
     width: 80px;
-    margin-bottom: -70px;
+    height: 80px;
   }
 }
