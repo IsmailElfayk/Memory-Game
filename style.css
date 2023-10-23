@@ -121,7 +121,7 @@ body {
 .unclickable {
   pointer-events: none;
 }
-/* ############# */
+/* ########### */
 @media (max-width: 830px) {
   .memory-game-blocks {
     display: flex;
