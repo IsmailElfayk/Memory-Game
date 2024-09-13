@@ -164,5 +164,5 @@ function play() {
     document.querySelector(".game-over").style.display = "block";
   }
   //##########
-  //##########
+  //############
 }
