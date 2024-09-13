@@ -1,188 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Memory Game</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="control-button">
-      <span>Start Game</span>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/media.css">
+  <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+  <div class="start">
+    <div>Start Play</div>
+  </div>
+  <div class="restart">
+    <div>Restart Play</div>
+  </div>
+  <div class="container">
+    <div class="header">
+      <span>Welcome, You Have 6 Wrong tries</span>
+      <span>Wrong tries : <span></span></span>
     </div>
-    <div class="game-over" style="display: none">
-      <span class="restart">Restart</span>
-    </div>
-    <div class="win" style="display: none">
-      <div>You Win</div>
-      <span class="restart">Restart</span>
-    </div>
-    <div class="info-container">
-      <div class="name">Welcome, <span></span></div>
-      <div class="tries">Wrong tries: <span>0</span></div>
-    </div>
-    <div class="memory-game-blocks">
-      <div class="game-block" data-tech="html">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/bananas.png" alt="" />
-        </div>
+    <div class="game-block">
+      <div class="card">
+        <div class="front face"><img src="./images/bananas.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="html">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/bananas.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/bananas.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="css">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/cherries.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/cherries.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="css">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/cherries.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/cherries.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="js">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/strawberry.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/dragon-fruit.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="js">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/strawberry.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/dragon-fruit.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="php">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/passion-fruit.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/kiwi.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="php">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/passion-fruit.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/kiwi.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="java">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/watermelon.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/lemon.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="java">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/watermelon.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/lemon.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="python">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/kiwi.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/orange.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="python">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/kiwi.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/orange.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="c#">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/dragon-fruit.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/passion-fruit.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="c#">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/dragon-fruit.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/passion-fruit.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="c">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/pineapple.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/pineapple.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="c">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/pineapple.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/pineapple.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="git">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/lemon.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/strawberry.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="git">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/lemon.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/strawberry.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="react">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/orange.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/watermelon.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
-      <div class="game-block" data-tech="react">
-        <div class="face front">
-          <img src="./images/exclamation.png" alt="" />
-        </div>
-        <div class="face back">
-          <img src="./images/orange.png" alt="" />
-        </div>
+      <div class="card">
+        <div class="front face"><img src="./images/watermelon.png" alt=""></div>
+        <div class="back face"><img src="./images/exclamation.png" alt=""></div>
       </div>
     </div>
-    <script src="main.js"></script>
-  </body>
+  </div>
+  <script src="./src/main.js"></script>
+</body>
+
+
 </html>
